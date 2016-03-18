@@ -8,6 +8,7 @@ var SongQueue = Songs.extend({
   },
 
   playFirst: function() {
+    console.log('played');
     this.at(0).play();
   }
 
