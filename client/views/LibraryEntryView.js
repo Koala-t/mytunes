@@ -7,7 +7,8 @@ var LibraryEntryView = Backbone.View.extend({
 
   events: {
     'click': function() {
-      this.model.play();
+      this.model.play(); //remove this later to make the song in the first queue position play
+      this.model.enqueue();
     }
   },
 
